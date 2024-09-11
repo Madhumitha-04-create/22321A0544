@@ -1,0 +1,28 @@
+pipeline
+{
+any agent
+stages
+{
+stage('build and test')
+{
+steps
+{
+echo 'build success'
+}
+stage
+{
+steps
+{
+echo 'test success'
+}
+}
+stage('deploy')
+{
+steps
+{
+echo 'make publish'
+}
+}
+}
+}
+
