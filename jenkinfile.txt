@@ -1,22 +1,23 @@
 pipeline
 {
-any agent
+agent any
 stages
 {
-stage('build and test')
+stage('Build')
 {
 steps
 {
 echo 'build success'
 }
-stage
+}
+stage('Test')
 {
 steps
 {
 echo 'test success'
 }
 }
-stage('deploy')
+stage('Deploy')
 {
 steps
 {
@@ -25,4 +26,3 @@ echo 'make publish'
 }
 }
 }
-
